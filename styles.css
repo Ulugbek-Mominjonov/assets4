@@ -47,6 +47,9 @@ body{
   margin-right: auto;
 }
 /* header */
+.site-header{
+  margin-top: 20px;
+}
 .header-container{
   display: flex;
   justify-content: space-between;
@@ -60,7 +63,7 @@ body{
   display: flex;
   align-items: center;
   margin: 0;
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -119,21 +122,77 @@ body{
 .message-item{
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
-.message-item:nth-child(2n){
+.message-receiver{
   align-items: flex-end;
 }
 .message-item + .message-item{
   margin-top: 22px;
 }
+.message-time{
+  font-size: 14px;
+}
 .message-text{
+  position: relative;
   max-width: 272px;
   margin: 0;
   margin-top: 10px;
-  padding: 15px;
+  font-size: 14px;
+  padding: 10px;
   color: #000;
   background-color: #E6EDF6;
 }
+.message-text::before{
+  content: "";
+  position: absolute;
+  top: 0;
+}
+.message-sender .message-text::before{
+  left: -10px;
+  border-top: 0px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #E6EDF6;
+}
+.message-receiver .message-text::before{
+  right: -10px;
+  border-top: 0px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #E6EDF6;
+}
+.message-blocked .message-text::before{
+  border: none;
+}
 .message-text-blocked{
   background-color: #FFC2C1;
+}
+  /* FOOTER */
+.footer-container{
+  background-color: #fff;
+  padding-top: 0;
+}
+.send-message-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  padding-top: 20px;
+  border-top: 1px solid #E3EAF0;
+}
+.form-input{
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #967C74;
+  font-weight: 700;
+}
+.form-submit{
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6B96D8;
 }

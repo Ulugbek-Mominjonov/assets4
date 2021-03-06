@@ -23,33 +23,27 @@
       <div class="container messages-container">
         <h4 class="message-day">Today</h4>
         <ul class="messages-list">
-          <li class="message-item">
-            <span message-time>10:53</span>
+          <li class="message-item message-sender">
+            <span class="message-time">10:53</span>
             <p class="message-text">
               Hi Mark! I made a new design for Messenger App
             </p>
           </li>
 
-          <li class="message-item">
-            <div>
-              <span message-time>10:57</span>
+          <li class="message-item message-receiver">
+            <span class="message-time">10:57</span>
             <p class="message-text">
               Yo! Send it to my assitent and we'll review it during the year
             </p>
-            </div>
           </li>
 
-          <li class="message-item">
-            <div>
-              <span message-time>11:03</span>
-            <p class="message-text">
-              But Mark...
-            </p>
-            </div>
+          <li class="message-item message-sender">
+            <span class="message-time">11:03</span>
+            <p class="message-text">But Mark...</p>
           </li>
 
-          <li class="message-item">
-            <span message-time></span>
+          <li class="message-item message-receiver message-blocked">
+            <span class="message-time"></span>
             <p class="message-text message-text-blocked">
               You were blocked by the user
             </p>
@@ -57,5 +51,18 @@
         </ul>
       </div>
     </main>
+    <footer class="send-message">
+      <div class="container footer-container">
+        <form class="send-message-form">
+          <input
+            class="form-input"
+            type="text"
+            name="text"
+            placeholder="Enter your message"
+          />
+          <button class="form-submit" type="submit">SEND</button>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
