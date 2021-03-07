@@ -80,11 +80,14 @@ body{
   background-image: url("img/close.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
   opacity: 0.8;
   width: 24px;
   height: 24px;
 }
-
+.button-close-window:hover{
+  opacity: 1;
+}
 /* Messages */
 .messages-container{
   background-color: #fff;
@@ -184,13 +187,13 @@ body{
   border: none;
   outline: none;
   font-size: 15px;
-  color: #967C74;
   font-weight: 700;
 }
 .form-submit{
   border: none;
   outline: none;
   background: none;
+  cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 1px;
